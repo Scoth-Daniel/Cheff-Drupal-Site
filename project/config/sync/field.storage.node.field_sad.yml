@@ -1,17 +1,16 @@
-uuid: 7b9bea88-d890-460c-b4ba-875da9197efa
+uuid: 218c3a2b-8d1b-4c98-9430-22b505d60730
 langcode: en
 status: true
 dependencies:
   module:
-    - media
+    - link
     - node
-id: node.field_programa_del_curso
-field_name: field_programa_del_curso
+id: node.field_sad
+field_name: field_sad
 entity_type: node
-type: entity_reference
-settings:
-  target_type: media
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true

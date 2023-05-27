@@ -1,19 +1,18 @@
-uuid: c7125bfd-67dd-4618-872e-abd2ab8acbb4
+uuid: 60c985b6-e2d3-4f68-a631-cf753221ccb4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.curso.body
-    - field.field.node.curso.field_diciplina_academica
-    - field.field.node.curso.field_programa_del_curso
-    - node.type.curso
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.field_sad
+    - node.type.publicacion
   module:
-    - media_library
+    - link
     - path
     - text
-id: node.curso.default
+id: node.publicacion.default
 targetEntityType: node
-bundle: curso
+bundle: publicacion
 mode: default
 content:
   body:
@@ -32,22 +31,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_diciplina_academica:
-    type: entity_reference_autocomplete
-    weight: 123
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_programa_del_curso:
-    type: media_library_widget
+  field_sad:
+    type: link_default
     weight: 122
     region: content
     settings:
-      media_types: {  }
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   path:
     type: path
