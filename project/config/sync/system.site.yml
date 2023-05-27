@@ -1,8 +1,8 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
-uuid: 42b3acd5-759c-4685-b577-9ff3e8515f53
-name: drupalSite
+uuid: 798731a5-f116-4feb-91f3-28b2c0295816
+name: 'Cheff Site'
 mail: sr.scoth@gmail.com
 slogan: ''
 page:
